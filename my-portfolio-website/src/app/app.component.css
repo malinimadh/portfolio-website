@@ -1,0 +1,190 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-icons a img {
+  width: 24px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-icons a:hover img {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  margin-top: 80px; /* Push below navbar */
+}
+
+/* Profile Card */
+.profile-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  max-width: 280px;
+}
+
+.profile-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.profile-desc {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-icons img {
+  width: 20px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Content Section */
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.title span {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin: 15px 0;
+  max-width: 500px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.stat {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stat span {
+  font-size: 2rem;
+  color: #ff7a18;
+}
+
+/* Services */
+.services {
+  display: flex;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.service-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card span {
+  font-size: 1.5rem;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Orange Card */
+.orange {
+  background: #ff7a18;
+  color: black;
+}
+
+/* Neon Green Card */
+.neon {
+  background: #cfff33;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+
+  .stats {
+      justify-content: center;
+  }
+
+  .services {
+      flex-direction: column;
+  }
+}
