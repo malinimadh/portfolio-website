@@ -1,0 +1,47 @@
+/* Profile Card */
+.profile-card {
+    background: white;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    max-width: 280px;
+  }
+
+  i {
+    font-size: 30px;
+    color: #ff7a18;
+  }
+  
+  .profile-img img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .profile-name {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .profile-desc {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .social-icons img {
+    width: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }

@@ -1,8 +1,36 @@
-.nav-bar {
-  width: 250px;
-  height: 50px;
-  background-color: #1c1a19;
-  border-radius: 50px;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  width: min-content;  /* Increase width */
+  height: min-content;
+  padding: 10px 20px;
 }
 
-  
+i {
+  font-size: 20px;
+  color: white;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-icons a img {
+  width: 24px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-icons a:hover img {
+  transform: scale(1.2);
+  opacity: 0.8;
+}

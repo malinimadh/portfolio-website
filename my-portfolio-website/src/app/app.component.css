@@ -16,35 +16,7 @@ body {
   padding: 20px;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 10px 20px;
-}
 
-.nav-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.nav-icons a img {
-  width: 24px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.nav-icons a:hover img {
-  transform: scale(1.2);
-  opacity: 0.8;
-}
 
 /* Layout */
 .container {
@@ -57,60 +29,25 @@ body {
   margin-top: 80px; /* Push below navbar */
 }
 
-/* Profile Card */
-.profile-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  max-width: 280px;
-}
 
-.profile-img img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.profile-name {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.profile-desc {
-  font-size: 0.9rem;
-  color: #bbb;
-  margin-top: 10px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.social-icons img {
-  width: 20px;
-  transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-}
 
 /* Content Section */
 .title {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 7rem;
+  font-weight: 600;
+  font-family: sans-serif;
 }
 
-.title span {
+.engineer {
+  font-size: 7rem;
+  font-weight: 600;
+  font-family: sans-serif;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .description {
   font-size: 1.1rem;
+  font-family: sans-serif;
   color: #bbb;
   margin: 15px 0;
   max-width: 500px;
@@ -124,15 +61,18 @@ body {
 }
 
 .stat {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .stat span {
-  font-size: 2rem;
-  color: #ff7a18;
+  font-size: 5rem;
+  font-weight: 600;
+  color: white;
 }
+
+
 
 /* Services */
 .services {
