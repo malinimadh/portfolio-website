@@ -1,4 +1,23 @@
 /* General Styles */
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: start; /* Ensure sticky works properly */
+  margin-top: 80px;
+}
+
+/* Profile Card */
+app-profile-card {
+  position: sticky;
+  top: 20px; /* Adjust this to ensure it's visible when scrolling */
+  align-self: start; /* Helps maintain its position */
+  z-index: 10; /* Keeps it above other elements */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +55,8 @@ body {
   font-size: 7rem;
   font-weight: 600;
   font-family: sans-serif;
+  
+    line-height: 0.7;
 }
 
 .engineer {

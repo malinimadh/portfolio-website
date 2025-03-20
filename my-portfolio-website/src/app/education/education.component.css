@@ -1,0 +1,87 @@
+/* General Styles */
+.experience-section {
+    max-width: 800px;
+    margin: auto;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    /* line-height: 0.7; */
+  }
+  
+  .engineer {
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Experience List */
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Experience Card */
+  .experience-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Experience Info */
+  .company {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #bbb;
+    margin: 10px 0;
+  }
+  
+  .duration {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  /* External Link */
+  .external-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ff7a18;
+    transition: transform 0.3s ease;
+  }
+  
+  .external-link:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .experience-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .external-link {
+      margin-top: 10px;
+    }
+  }
+  

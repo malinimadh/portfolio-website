@@ -1,0 +1,16 @@
+<div class="experience-section">
+    <h1 class="title">EDUCATION</h1>
+    <!-- <h1 class="engineer">EXPERIENCE</h1> -->
+  
+    <div class="experience-list">
+      <div class="experience-card" *ngFor="let edu of education">
+        <div class="experience-info">
+          <h2 class="company">{{ edu.university }}</h2>
+          <p class="description">{{ edu.course }}</p>
+          <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt odit sapiente officia voluptatem consectetur! Beatae enim autem reprehenderit architecto.</p>
+          <p class="duration">{{ edu.duration }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
